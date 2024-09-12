@@ -1,0 +1,344 @@
+/* General reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* Light text */
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Glowing Strip Background */
+#glowing-strip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 200vh;
+    background: linear-gradient(90deg, rgba(255,0,120,0.8), rgba(128,0,255,0.8), rgba(0, 213, 255, 0.8));
+    background-size: 200% 200%;
+    z-index: -1;
+    animation: roam 10s infinite linear;
+}
+
+@keyframes roam {
+    0% { transform: translate(0%, 0%); }
+    50% { transform: translate(-50%, -50%); }
+    100% { transform: translate(0%, 0%); }
+}
+
+/* Hero Section */
+#hero {
+    background-color: rgba(0, 0, 0, 0.7); /* Black transparent background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+/* Hero Section */
+.hero-content {
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* Typing Text Animation */
+#typed-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    color: #ff007c;
+    display: inline-block;
+}
+
+.cursor {
+    font-weight: 100;
+    font-size: 80px;
+    color: #fff;
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Black semi-transparent background */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #ff007c;
+}
+
+.logo p {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.nav-links {
+    padding-left: 110px;
+    list-style: none;
+    display: flex;
+    gap: 90px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ff007c;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+.buttons .btn {
+    text-decoration: none;
+    background-color: #ff007c;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: #fff;
+    color: #ff007c;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+    display: flex;
+    gap: 20px; /* Gap between cards */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    cursor: grab;
+}
+
+/* Smooth transition when dragging back */
+.carousel-wrapper.is-dragging {
+    transition: none; /* Disable transition while dragging for smoother interaction */
+}
+
+
+/* Carousel Card */
+.carousel-card {
+    min-width: 300px; /* Fixed width */
+    min-height: 450px;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.carousel-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image in black and white initially */
+.carousel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: grayscale(100%); /* Black and white */
+    transition: filter 0.3s ease-in-out;
+}
+
+/* When the card is hovered, the image becomes colorful */
+.carousel-card:hover img {
+    filter: grayscale(0%); /* Full color on hover */
+}
+
+/* Fading Effect */
+.carousel-gradient-left, .carousel-gradient-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.carousel-gradient-left {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 200vw;
+    height: 200vh;
+    background: linear-gradient(90deg, rgba(255,0,120,0.8), rgba(128,0,255,0.8), rgba(0, 213, 255, 0.8));
+    background-size: 200% 200%;
+    z-index: -1;
+    animation: roam 10s infinite linear;
+    background: linear-gradient(90deg, rgba(255,0,120,0.8), rgba(128,0,255,0.8), rgba(0, 213, 255, 0.8));
+    animation: roam 10s infinite linear;
+
+}
+
+.carousel-gradient-right {
+    right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 200vh;
+    background: linear-gradient(90deg, rgba(255,0,120,0.8), rgba(128,0,255,0.8), rgba(0, 213, 255, 0.8));
+    background-size: 200% 200%;
+    z-index: -1;
+    animation: roam 10s infinite linear;
+    background: linear-gradient(90deg, rgba(255,0,120,0.8), rgba(128,0,255,0.8), rgba(0, 213, 255, 0.8));
+    animation: roam 10s infinite linear;
+
+}
+
+/* Disable text selection while dragging */
+.carousel-wrapper * {
+    user-select: none;
+}
+
+
+
+/* Divider Between Sections */
+section {
+    padding: 50px 0; /* Space between each section */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Adds a subtle partition between sections */
+}
+
+section:last-child {
+    border-bottom: none; /* Remove border from last section */
+}
+
+/* About, Projects, Skills, and Contact Section Styling */
+#about, #projects, #skills, #contact {
+    padding-top: 60px;
+}
+
+#about h2, #projects h2, #skills h2, #contact h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* General Section Styling */
+section p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8); /* Slightly faded text color */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #111; /* Dark background to contrast with the sections */
+}
+
+
+
+/* Section Styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ff007c;
+}
+
+section p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ccc;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1f1f1f;
+    color: #ccc;
+    margin-top: 50px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#adjust {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    font-size: 20px;
+    width: fit-content;
+    text-align:left;
+    padding-left: 730px;
+    
+}
