@@ -28,7 +28,7 @@ export default function Nav() {
           <span className="logo-mark">{profile.initials}</span>
           <span className="logo-meta">
             <span className="logo-name">JAY_PITRODA</span>
-            <span className="logo-role">SECURE // DEV</span>
+            <span className="logo-role">GEN AI // DEV</span>
           </span>
         </a>
 

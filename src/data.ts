@@ -7,9 +7,9 @@ export const profile = {
   initials: 'JP',
   handle: 'jay',
   roles: [
-    'security-minded full-stack developer',
-    'ui/ux designer & gen-ai developer',
-    'auth & integrity engineer',
+    'generative-ai developer',
+    'ui/ux designer & ai engineer',
+    'full-stack web developer',
     'hackathon builder & team lead',
   ],
   location: 'Vadodara, Gujarat',
@@ -20,7 +20,7 @@ export const profile = {
   // Decorative, deterministic identity fingerprint (not a real key).
   fingerprint: 'SHA256:9f2c a4e1 7b08 d35f e6a2 11c9 4d70 8b6e',
   tagline:
-    "Information Technology undergraduate who ships products end-to-end — secure auth flows, full-stack web, and AI tooling. I care about the details most people skip: OTP and Aadhaar verification, escrow integrity, and input you can trust.",
+    "Information Technology undergraduate who ships intelligent products end-to-end — generative-AI features, full-stack web, and the AI tooling that ties them together. From first idea to launch, I turn concepts into real, working AI products.",
 }
 
 export const stats = [
@@ -31,13 +31,13 @@ export const stats = [
 
 export const about = {
   lead:
-    "I'm Jay — an IT undergraduate who builds full-stack products with a security-first mindset.",
+    "I'm Jay — an IT undergraduate and generative-AI developer who ships intelligent, AI-powered products end-to-end.",
   body:
-    "Most of my work lives where design meets trust: authentication flows, OTP and Aadhaar verification, escrow-backed payments, and the kind of input validation that keeps real users safe. I ship end-to-end — Figma prototypes, full-stack web, Supabase backends, and AI tooling like MCP-powered Figma-to-code — and I lead teams through hackathons and large campus events without dropping the details that matter.",
+    "Most of my work lives where design meets applied AI: MCP-powered Figma-to-code automation, AI chatbots, vernacular text-to-speech, and agentic workflow automation with n8n. I wire full-stack web and Supabase backends to real models, prototype fast in Figma, and turn raw ideas into working AI products — while leading teams through hackathons and large campus events from first idea to launch.",
   facts: [
     { k: 'based', v: 'Vadodara, IN' },
     { k: 'status', v: 'open to opportunities', highlight: true },
-    { k: 'focus', v: 'secure full-stack · auth · ui/ux' },
+    { k: 'focus', v: 'gen ai · full-stack · ui/ux' },
     { k: 'edu', v: 'B.E. IT · SVIT (2022–26)' },
     { k: 'langs', v: 'English · Hindi · Gujarati' },
   ],

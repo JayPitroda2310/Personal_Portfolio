@@ -8,7 +8,7 @@ export default function Hero() {
     <section id="top" className="hero">
       <div className="hero-grid">
         <p className="eyebrow">
-          <span className="dot-pulse" /> OPEN TO OPPORTUNITIES · SECURE FULL-STACK · UI/UX
+          <span className="dot-pulse" /> OPEN TO OPPORTUNITIES · GENERATIVE AI · FULL-STACK
         </p>
 
         <h1 className="hero-title">

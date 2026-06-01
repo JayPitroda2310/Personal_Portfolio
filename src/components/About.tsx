@@ -46,7 +46,7 @@ export default function About() {
             <div className="avatar-glyph">{profile.initials}</div>
             <div className="panel-rows">
               <div><span className="pk">NAME</span><span className="pv">{profile.fullName}</span></div>
-              <div><span className="pk">ROLE</span><span className="pv">Secure Full-Stack</span></div>
+              <div><span className="pk">ROLE</span><span className="pv">Gen AI Developer</span></div>
               <div><span className="pk">BASE</span><span className="pv">Vadodara, IN</span></div>
               <div><span className="pk">UPTIME</span><span className="pv">{uptime}</span></div>
               <div>

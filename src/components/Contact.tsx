@@ -11,7 +11,7 @@ export default function Contact() {
         <h3 className="contact-cta">
           Let's build
           <br />
-          <span className="accent">something secure.</span>
+          <span className="accent">something intelligent.</span>
         </h3>
         <p>Open to internships, full-time roles and freelance. I respond within 24 hours.</p>
 

@@ -43,7 +43,7 @@ export default function HudFrame() {
   }, [reduced])
 
   const ticker =
-    '◂ JAY PITRODA  ·  SECURE FULL-STACK DEVELOPER  ·  UI/UX × GENERATIVE AI  ·  AUTH · OTP · ESCROW INTEGRITY  ·  OPEN TO OPPORTUNITIES  ·  '
+    '◂ JAY PITRODA  ·  GENERATIVE AI DEVELOPER  ·  UI/UX × FULL-STACK  ·  MCP · AI CHATBOTS · WORKFLOW AUTOMATION  ·  OPEN TO OPPORTUNITIES  ·  '
 
   return (
     <div className="hud-frame" aria-hidden="true">
