@@ -16,7 +16,7 @@ export const profile = {
   email: 'pitrodajay6@gmail.com',
   phone: '+91 94096 62002',
   phoneHref: '+919409662002',
-  resume: 'Jay_Pitroda_ATS_Resume.pdf',
+  resume: '/Jay_Pitroda_ATS_Resume.pdf',
   // Decorative, deterministic identity fingerprint (not a real key).
   fingerprint: 'SHA256:9f2c a4e1 7b08 d35f e6a2 11c9 4d70 8b6e',
   tagline:
@@ -98,6 +98,7 @@ export type Project = {
   secNote: string
   stack: string[]
   link?: string
+  linkLabel?: string
   headingLink?: string
 }
 
@@ -140,13 +141,14 @@ export const projects: Project[] = [
   {
     id: '0x04',
     name: 'TrashBid',
-    type: 'smart waste auctioning',
+    type: 'industrial waste exchange',
     blurb:
-      'Real-time bidding and smart vendor allocation for recyclable waste. Led the team to 2nd rank in the SIH ideathon round.',
+      'Industrial waste-exchange marketplace where one industry’s waste becomes another’s raw material. An auction mechanism governs buying and selling to land the best rate for both parties. Led the team to 2nd rank in the SIH ideathon round.',
     meta: '2nd · ideathon',
     status: 'awarded',
     secNote: 'allocation integrity · anti-fraud',
     stack: ['Web', 'Auctions', 'SIH'],
+    link: 'https://trashbid-main.vercel.app/',
   },
   {
     id: '0x05',
@@ -159,6 +161,20 @@ export const projects: Project[] = [
     secNote: 'permissioned CA access · scoped roles',
     stack: ['React', 'Vercel', 'Supabase'],
     link: 'https://invoice-kaps.vercel.app',
+  },
+  {
+    id: '0x06',
+    name: 'Bihar Kisan Rin Portal',
+    type: 'gov monitoring dashboard',
+    blurb:
+      'Dashboard for the Bihar Government to monitor farmer-loan metrics across the Kisan Rin portal. Designed and built through a Claude + Figma integration pipeline.',
+    meta: 'figma · gov',
+    status: 'prototype',
+    secNote: 'gov-grade metrics · role access',
+    stack: ['Figma', 'Claude', 'Dashboard'],
+    link:
+      'https://www.figma.com/design/aLnxcLpNvk3iprkqYmjNNL/Bihar-Kisan-Rin-Portal-Jay?node-id=0-1&t=Ptu0iMl0qnrxoFGS-1',
+    linkLabel: 'VIEW FIGMA FILE',
   },
 ]
 

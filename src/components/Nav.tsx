@@ -41,12 +41,11 @@ export default function Nav() {
               </a>
             </li>
           ))}
-          <li>
-            <a className="nav-cta" href={profile.resume} download>
-              DOWNLOAD_CV
-            </a>
-          </li>
         </ul>
+
+        <a className="nav-cta" href={profile.resume} download="Jay_Pitroda_Resume.pdf">
+          DOWNLOAD_CV
+        </a>
 
         <button
           className="nav-toggle"

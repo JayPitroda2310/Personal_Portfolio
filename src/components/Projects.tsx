@@ -42,7 +42,7 @@ export default function Projects() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  VIEW LIVE →
+                  {p.linkLabel ?? 'VIEW LIVE'} →
                 </a>
               ) : (
                 <span className="card-link">{p.meta.toUpperCase()} →</span>
