@@ -20,9 +20,33 @@ export default function Projects() {
                 <span className="card-idx">{p.id.toUpperCase()}</span>
                 <span className="card-type">{p.type.toUpperCase()}</span>
               </div>
-              <h3>{p.name}</h3>
+              <h3>
+                {p.headingLink ? (
+                  <a
+                    className="card-heading-link"
+                    href={p.headingLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {p.name}
+                  </a>
+                ) : (
+                  p.name
+                )}
+              </h3>
               <p>{p.blurb}</p>
-              <span className="card-link">{p.meta.toUpperCase()} →</span>
+              {p.link ? (
+                <a
+                  className="card-link"
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VIEW LIVE →
+                </a>
+              ) : (
+                <span className="card-link">{p.meta.toUpperCase()} →</span>
+              )}
             </div>
           </Reveal>
         ))}

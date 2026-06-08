@@ -97,6 +97,8 @@ export type Project = {
   status: ProjectStatus
   secNote: string
   stack: string[]
+  link?: string
+  headingLink?: string
 }
 
 export const projects: Project[] = [
@@ -110,6 +112,8 @@ export const projects: Project[] = [
     status: 'secure',
     secNote: 'escrow integrity · OTP verification',
     stack: ['React', 'Supabase', 'Figma'],
+    link: 'https://kisansetu.online',
+    headingLink: 'https://kisansetu.figma.site/',
   },
   {
     id: '0x02',
@@ -143,6 +147,18 @@ export const projects: Project[] = [
     status: 'awarded',
     secNote: 'allocation integrity · anti-fraud',
     stack: ['Web', 'Auctions', 'SIH'],
+  },
+  {
+    id: '0x05',
+    name: 'Invoice KAPS',
+    type: 'invoice management system',
+    blurb:
+      'Invoicing platform for local businesses with permissioned CA access — something third-party apps never allowed. Granting a CA scoped entry into a business’s invoice creation eases the workload on both sides and carries the trust forward.',
+    meta: 'live',
+    status: 'shipped',
+    secNote: 'permissioned CA access · scoped roles',
+    stack: ['React', 'Vercel', 'Supabase'],
+    link: 'https://invoice-kaps.vercel.app',
   },
 ]
 
